@@ -54,14 +54,14 @@ public class GameOverActivity extends AppCompatActivity {
         else
             lost();
 
-        Utils.showAdPopup();
+        //Utils.showAdPopup();
     }
 
     // lose
     public void lost() {
-        FrameLayout layout_ads = findViewById(R.id.layout_ads_1);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads_1);
         RelativeLayout adView = findViewById(R.id.adView_1);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         LinearLayout win = findViewById(R.id.win);
         LinearLayout lose = findViewById(R.id.lose);
@@ -115,9 +115,9 @@ public class GameOverActivity extends AppCompatActivity {
         findViewById(R.id.btn_watch).setOnTouchListener(new OnTouchClickListener(new OnTouchClickListener.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Config.countVideo > 0)
+                /*if (Config.countVideo > 0)
                     Utils.showRewardedVideo(getApplicationContext());
-                else
+                else*/
                     Utils.shortSnackbar(GameOverActivity.this, "Bạn đã hết lượt xem video !!!");
                 //perform onClick
             }
@@ -137,9 +137,9 @@ public class GameOverActivity extends AppCompatActivity {
 
     // lose
     public void lose(String dapan) {
-        FrameLayout layout_ads = findViewById(R.id.layout_ads_1);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads_1);
         RelativeLayout adView = findViewById(R.id.adView_1);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         LinearLayout win = findViewById(R.id.win);
         LinearLayout lose = findViewById(R.id.lose);
@@ -194,9 +194,9 @@ public class GameOverActivity extends AppCompatActivity {
         findViewById(R.id.btn_watch).setOnTouchListener(new OnTouchClickListener(new OnTouchClickListener.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Config.countVideo > 0)
+                /*if (Config.countVideo > 0)
                     Utils.showRewardedVideo(getApplicationContext());
-                else
+                else*/
                     Utils.shortSnackbar(GameOverActivity.this, "Bạn đã hết lượt xem video !!!");
                 //perform onClick
             }
@@ -216,9 +216,9 @@ public class GameOverActivity extends AppCompatActivity {
 
     // win
     public void win(String giaithich) {
-        FrameLayout layout_ads = findViewById(R.id.layout_ads_2);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads_2);
         RelativeLayout adView = findViewById(R.id.adView_2);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         LinearLayout win = findViewById(R.id.win);
         LinearLayout lose = findViewById(R.id.lose);

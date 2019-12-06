@@ -27,7 +27,7 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        FacebookSdk.sdkInitialize(getApplicationContext());
+        //FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 
         //MobileAds.initialize(getApplicationContext(), "ca-app-pub-3940256099942544~3347511713");
@@ -37,14 +37,14 @@ public class MainApplication extends Application {
         fontBold = Typeface.createFromAsset(getAssets(), "SanFranciscoDisplay-Bold.otf");
         fontMedium = Typeface.createFromAsset(getAssets(), "SanFranciscoDisplay-Regular.otf");
 
-        // Handle adService
+        /*// Handle adService
         Calendar calendar = Calendar.getInstance();
         Config.time_start = ((calendar.get(Calendar.YEAR) * 365 + calendar.get(Calendar.DAY_OF_YEAR)) * 24
                 + calendar.get(Calendar.HOUR_OF_DAY)) * 3600 + calendar.get(Calendar.MINUTE) * 60 + calendar.get(Calendar.SECOND);
         Config.time_end = Config.time_start;
 
         Config.showAdService = new Intent(this, ShowAdService.class);
-        startService(Config.showAdService);
+        startService(Config.showAdService);*/
 
         // load database
         Config.hoi_ngu = new HoiNgu(getApplicationContext(), Config.HOINGU_DATABASE);

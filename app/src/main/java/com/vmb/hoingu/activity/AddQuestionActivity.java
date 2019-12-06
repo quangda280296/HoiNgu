@@ -21,9 +21,9 @@ public class AddQuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_question);
 
-        FrameLayout layout_ads = findViewById(R.id.layout_ads);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads);
         RelativeLayout adView = findViewById(R.id.adView);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         CatLoadingView load = new CatLoadingView();
         load.show(getSupportFragmentManager(), "");

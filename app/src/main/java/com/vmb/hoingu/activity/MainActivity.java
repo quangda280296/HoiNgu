@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.choose_package_view).setVisibility(View.GONE);
         findViewById(R.id.ranking).setVisibility(View.GONE);
 
-        FrameLayout layout_ads = findViewById(R.id.layout_ads);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads);
         RelativeLayout adView = findViewById(R.id.adView);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         // set fullscreen
         FrameLayout root = findViewById(R.id.root);

@@ -14,7 +14,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -46,7 +45,7 @@ public class GameActivity extends AppCompatActivity {
     private String giai_thich;
 
     private int rand;
-    private int random;
+    private int random = -1;
     private int countBack = 0;
 
     private TextView lbl_count;
@@ -93,9 +92,9 @@ public class GameActivity extends AppCompatActivity {
 
         handler = new Handler();
 
-        FrameLayout layout_ads = findViewById(R.id.layout_ads);
+        /*FrameLayout layout_ads = findViewById(R.id.layout_ads);
         RelativeLayout adView = findViewById(R.id.adView);
-        Utils.showAd(getApplicationContext(), adView, layout_ads);
+        Utils.showAd(getApplicationContext(), adView, layout_ads);*/
 
         mainApplication = (MainApplication) getApplication();
 
@@ -149,7 +148,8 @@ public class GameActivity extends AppCompatActivity {
 
         // Handle data
         Bundle bundle = getIntent().getExtras();
-        random = bundle.getInt("index", -1);
+        if (bundle != null)
+            random = bundle.getInt("index", -1);
 
         if (Config.category.equals("hoi_ngu")) {
             Cursor cursor = Config.hoi_ngu.getCursor();
